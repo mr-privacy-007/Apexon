@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApexOn | Enterprise IT, AI & Cloud Transformation</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -633,11 +631,10 @@
     <div class="liquid-orb orb-1"></div>
     <div class="liquid-orb orb-2"></div>
 
-    <!-- NAVBAR -->
     <div class="navbar-wrapper">
         <nav class="navbar">
             <a href="#" class="brand-logo">
-                <img src="assets/logo/logo.png" alt="ApexOn Logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAcAAAF/CAYAAAC3YvLCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAnA7IcAAGU33jHAAAAAElFTkSuQmCC" alt="ApexOn Logo">
             </a>
 
             <ul class="nav-links">
@@ -658,7 +655,6 @@
         </nav>
     </div>
 
-    <!-- HERO SECTION -->
     <section class="hero-section">
         <div class="container">
             <div class="hero-grid">
@@ -677,14 +673,13 @@
 
                 <div class="hero-visual">
                     <div class="glass-sphere-wrapper">
-                        <img src="assets/logo/logo.png" alt="ApexOn Emblem" class="sphere-logo">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAcAAAF/CAYAAAC3YvLCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAnA7IcAAGU33jHAAAAAElFTkSuQmCC" alt="ApexOn Emblem" class="sphere-logo">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
     <section id="services" class="section-padding">
         <div class="container">
             <div class="section-header">
@@ -728,7 +723,6 @@
         </div>
     </section>
 
-    <!-- BRANCHES SECTION -->
     <section id="branches" class="section-padding">
         <div class="container">
             <div class="section-header">
@@ -766,7 +760,6 @@
         </div>
     </section>
 
-    <!-- CAREERS SECTION WITH DYNAMIC MAILTO HANDLER -->
     <section id="careers" class="section-padding">
         <div class="container">
             <div class="section-header">
@@ -833,12 +826,11 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/logo/logo.png" alt="ApexOn Footer Logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAcAAAF/CAYAAAC3YvLCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAnA7IcAAGU33jHAAAAAElFTkSuQmCC" alt="ApexOn Footer Logo">
                     <p style="color: var(--text-muted); font-size: 0.9rem;">Architecting next-generation enterprise technology solutions worldwide.</p>
                 </div>
 
@@ -860,7 +852,6 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT -->
     <script>
         // CANVAS ANIMATION
         const canvas = document.getElementById('bgCanvas');
@@ -967,36 +958,21 @@
             // Construct structured body text
             const subject = encodeURIComponent(`Career Application: ${name} - ${role}`);
             const body = encodeURIComponent(
-                `FULL NAME: ${name}
-` +
-                `EMAIL: ${email}
-` +
-                `PHONE: ${phone}
-` +
-                `PREFERRED ROLE: ${role}
-` +
-                `SELECTED CV FILE: ${selectedFileName || 'Attached'}
-
-` +
-                `APPLICATION SUMMARY:
-${summary}
-
-` +
-                `REASON TO JOIN APEXON:
-${reason}
-
-` +
-                `--------------------------------------------------
-` +
+                `FULL NAME: ${name}\n` +
+                `EMAIL: ${email}\n` +
+                `PHONE: ${phone}\n` +
+                `PREFERRED ROLE: ${role}\n` +
+                `SELECTED CV FILE: ${selectedFileName || 'Attached'}\n\n` +
+                `APPLICATION SUMMARY:\n${summary}\n\n` +
+                `REASON TO JOIN APEXON:\n${reason}\n\n` +
+                `--------------------------------------------------\n` +
                 `Note for Applicant: Please attach your CV file (${selectedFileName || 'Resume'}) directly to this email draft before pressing send!`
             );
 
             // Trigger the native desktop/mobile email client
             const mailtoUrl = `mailto:info@apexon.work.gd?subject=${subject}&body=${body}`;
             
-            alert(`Your application details have been populated into your mail app!
-
-IMPORTANT: Please remember to attach your CV file (${selectedFileName}) in your email app before hitting send.`);
+            alert(`Your application details have been populated into your mail app!\n\nIMPORTANT: Please remember to attach your CV file (${selectedFileName}) in your email app before hitting send.`);
 
             window.location.href = mailtoUrl;
         }
